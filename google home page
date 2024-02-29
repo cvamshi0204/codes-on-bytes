@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        /* Set the background color to black and text color to white */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Center the content vertically and horizontally */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Take up the full height of the viewport */
+            flex-direction: column; /* Arrange items vertically */
+        }
+
+        /* Style for the Google logo */
+        .logo {
+            width: 272px; /* Adjust width as needed */
+            margin-bottom: 20px; /* Spacing between logo and search box */
+            font-size: 32px; /* Initial font size */
+            transition: font-size 0.3s; /* Smooth transition for font size */
+        }
+
+        /* Style for the search box */
+        .search-box {
+            width: 600px; /* Adjust width as needed */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for the input field inside the search box */
+        .search-box input[type="text"] {
+            flex: 1; /* Allow the input field to grow to fill available space */
+            border: none;
+            padding: 8px;
+            font-size: 16px;
+            outline: none; /* Remove default focus outline */
+        }
+
+        /* Style for the search button inside the search box */
+        .search-box button {
+            background-color: #007bff; /* Blue color */
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            outline: none; /* Remove default focus outline */
+            transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+        }
+
+        /* Hover effect for the search button */
+        .search-box button:hover {
+            background-color: #0056b3; /* Darker blue color */
+            transform: scale(1.05); /* Scale up slightly on hover */
+        }
+
+        /* Decrease font size and width of logo when input field is focused */
+        .search-box input[type="text"]:focus + .logo {
+            width: 150px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Container for centering content vertically and horizontally -->
+    <div class="container">
+        <!-- Google logo -->
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" class="logo">
+        
+        <!-- Search box -->
+        <div class="search-box">
+            <input type="text" placeholder="Search Google..."> <!-- Input field -->
+            <button>Search</button> <!-- Search button -->
+        </div>
+    </div>
+</body>
+</html>
